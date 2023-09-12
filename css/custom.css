@@ -13,6 +13,10 @@
 
 }
 
+.cityu-news-excerpt{
+	max-width: none;
+}
+
 #map{
 	height :400px;
 	width: 100%;
@@ -287,8 +291,8 @@ div.google-visualization-tooltip > ul > li {
 .people-box-content {
     text-align: left;
     width: 95%;
-    margin-left: 20px;
-	margin-right: 200px;
+    margin-left: 2.5%;
+	margin-right: 2.5%;
     margin-top: 2px;
     margin-bottom: 2px;
     float: none;
@@ -297,8 +301,8 @@ div.google-visualization-tooltip > ul > li {
     margin-top: 10px;
     margin-bottom: 2px;
     float: none;
-    margin-left: 20px;
-	margin-right: 20px;
+    margin-left: 2.5%;
+	margin-right: 2.5%;
     height: auto;
     font-size: 13px;
     width: 95%;
@@ -627,6 +631,7 @@ div.google-visualization-tooltip > ul > li {
 }
 .cityu-news-excerpt {
 	width: 80% !important;
+	text-align: justify;
 }
 .table-title {
 	color: #3877a9;
