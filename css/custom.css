@@ -2,7 +2,16 @@
 /* @import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css); */
 /*Inline popup*/
 
+.cityu-inner{
+	margin: auto;
+	width:70%;
+	min-width: 960px;
+}
 
+#cityu-content{
+	width:70%;
+	min-width:760px;
+}
 
 #map{
 	height :400px;
@@ -253,13 +262,14 @@ div.google-visualization-tooltip > ul > li {
 }
 
 .people-box {
-    width: 900px;
+    width: 100%;
     height: auto;
     background-color: #f4f4f4;
     margin-top: 10px;
-    margin-right: 10px;
     margin-bottom: 10px;
     padding: 10px;
+	padding-right: 0;
+	padding-left: 0;;
     float: left;
     border-bottom: 2px solid #919191;
 }
@@ -267,39 +277,31 @@ div.google-visualization-tooltip > ul > li {
 	/* background-color: #A2A2A2; */
 }
 .people-box-image {
-    margin-left: 10px;
-    /* [disabled]margin-right: auto; */
-		width: 150px;
+    margin-left: 15px;
+	margin-right:20px;
+	padding-bottom: 5px;
+	width: 150px;
     float: left;
     border-bottom-color: #919191;
 }
-.people-box-title {
-    text-align: center;
-    color: #000;
-    padding-top: 4px;
-    float: left;
-    width: 180px;
-    margin-left: 10px;
-    border-bottom: 2px solid #3877a9;
-    margin-bottom: 5px;
-}
 .people-box-content {
     text-align: left;
-    width: 700px;
+    width: 95%;
     margin-left: 20px;
+	margin-right: 200px;
     margin-top: 2px;
     margin-bottom: 2px;
-    float: left;
-}
-.people-box-content-ad-bio {
-    text-align: left;
+    float: none;
+}.people-box-content-ad-bio {
+    text-align: justify;
     margin-top: 10px;
     margin-bottom: 2px;
-    float: left;
+    float: none;
     margin-left: 20px;
+	margin-right: 20px;
     height: auto;
     font-size: 13px;
-    width: 700px;
+    width: 95%;
 }
 
 .pub-category{
