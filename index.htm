@@ -26,12 +26,14 @@
 		<link rel="stylesheet" type="text/css" href="https://template.cityu.edu.hk/template/css/jquery.nivo.slider.css" />
 		<link rel="stylesheet" type="text/css" href="css/cityu.base.custom.css" />
 		<link href="css/custom.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/slider/swiper.min.css">
 		<!-- /CSS -->
 
 		<!-- JS -->
 		<script type="text/javascript" src="https://template.cityu.edu.hk/template/js/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="js/cityu.base.config.js"></script>
 		<script type="text/javascript" src="https://template.cityu.edu.hk/template/js/cityu.base.js"></script>
+		<script src="js/slider/swiper.min.js"></script>
 		<!-- /JS -->
 
 		<!-- jQuery Plugins -->
@@ -47,6 +49,107 @@
 
 		<!-- ADD YOUR JAVASCRIPTS HERE -->
 		<!-- /ADD YOUR JAVASCRIPTS HERE -->
+
+		<style>
+			#banner{
+				width:100%;
+				aspect-ratio: 7/5;
+				overflow:hidden;
+				position:relative;
+			}
+			.swiper-container {
+				width:100%;
+				aspect-ratio: 7/5;
+				position:absolute;
+				left:0;
+				
+			}
+			.swiper-slide .detail{
+				height:80px;
+				background:rgba(0,0,0,.7);
+				position:absolute;
+				width:100%;
+				bottom:0;
+				color:#fff;
+				opacity:0;
+				transition:opacity .3s .3s;
+				padding-left: 10px;
+			}
+			.swiper-slide-active .detail{
+				opacity:1;
+				}
+			.swiper-slide .detail h3{
+				width:950px;
+				margin:15px auto 0;}
+			.swiper-slide .detail p{
+				width:950px;
+				margin:5px auto 0;}	
+			.swiper-slide .detail p span{
+				width:650px;
+				display:block;}	
+		/**/.effect1 img{
+				transform:scale(1.25,1.25) translate(10%,10%);
+				transform:scale(1.1,1.1) translate(4.545%,4.545%);
+				/*tr     =    (sc-1)/2sc*100%              */
+				/* --1.25       0.25/2.5*100%=10%          */
+				
+				}
+				
+		.leftUp img{-webkit-animation-name:leftUp;animation-name:leftUp;}
+		@-webkit-keyframes leftUp{
+		0%{transform:scale(1.1,1.1) translate(4.545%,4.545%); }
+		100%{transform:scale(1.1,1.1)  translate(-4.545%,-4.545%);}}
+		@keyframes leftUp{
+		0%{transform:scale(1.1,1.1) translate(4.545%,4.545%);}
+		100%{transform:scale(1.1,1.1)  translate(-4.545%,-4.545%);}}
+		
+		.moveRight img{-webkit-animation-name:moveRight;animation-name:moveRight;}
+		@-webkit-keyframes moveRight{
+		0%{transform:scale(1.1,1.1) translate(-4.545%,0); }
+		100%{transform:scale(1.1,1.1)  translate(4.545%,0);}}
+		@keyframes moveRight{
+		0%{transform:scale(1.1,1.1) translate(-4.545%,0);}
+		100%{transform:scale(1.1,1.1)  translate(4.545%,0);}}
+		
+		.moveDown img{-webkit-animation-name:moveDown;animation-name:moveDown;}
+		@-webkit-keyframes moveDown{
+		0%{transform:scale(1.1,1.1) translate(0,-4.545%); }
+		100%{transform:scale(1.1,1.1)  translate(0,4.545%);}}
+		@keyframes moveDown{
+		0%{transform:scale(1.1,1.1) translate(0,-4.545%);}
+		100%{transform:scale(1.1,1.1)  translate(0,4.545%);}}
+		
+		.centerBig img{-webkit-animation-name:centerBig;animation-name:centerBig;}
+		@-webkit-keyframes centerBig{
+		100%{transform:scale(1.1,1.1);}}
+		@keyframes centerBig{
+		100%{transform:scale(1.1,1.1);}}
+		
+		.rightDownBig img{-webkit-animation-name:rightDownBig;animation-name:rightDownBig;}
+		@-webkit-keyframes rightDownBig{
+		100%{transform:scale(1.1,1.1) translate(4%,4%);}}
+		@keyframes rightDownBig{
+		100%{transform:scale(1.1,1.1) translate(4%,4%);}}
+		
+		.swiper-slide img{
+			animation-duration:5s;
+			animation-timing-function:linear;
+			animation-fill-mode: forwards;
+			-webkit-animation-duration:5s;
+			-webkit-animation-timing-function:linear;
+			-webkit-animation-fill-mode: forwards;
+			}	
+		.swiper-pagination{
+			bottom:35px;
+			right:5%;
+			}
+		.swiper-pagination-bullet{
+			width:20px;
+			height:20px;
+			background:#fff;
+			margin:0 5px;
+			}		
+		</style>
 	</head>
 
 	<body class="cityu-dept cityu-layout-content cityu-bgtheme-02 cityu-navtheme-02">
@@ -243,32 +346,61 @@
 
               			<h1 id="1" style="margin-top: 0;">Photo Gallery</h1>
 						
-						<div class="index-img-box">
-							<a href="people.htm"><img class="index-img" src="images/ppl/group_201222_3.jpg"  width="100%" /></a>
-						</div>
-
-						<div class="index-img-box">
-							<a href="research.htm"> <img class="index-img left-align" src="images/research/mod.png"  width="37%" height="100%"/> </a>
-							<a href="research.htm"> <img class="index-img right-align" src="images/ppl/NP.jpg"  width="60%" height="100%"/> </a>
-						</div>
-
-						<div class="index-img-box>"
-							<a href="research.htm"> <img class="index-img left-align" src="images/ppl/Kerr comb.jpg"  width="57%" /> </a>
-							<a href="research.htm"> <img class="index-img right-align" src="images/ppl/Freq_Comb.jpg"  width="41%" /> </a>
-						</div>
-
-						<div class="index-img-box">
-							<a href="research.htm"> <img class="index-img left-align" src="images/ppl/mwp.jpg"  width="48%" /> </a>
-							<a href="research.htm"> <img class="index-img right-align" src="images/ppl/prs.png"  width="48%" /> </a>
-						</div>
-
-						<div class="index-img-box">
-							<a href="research.htm"> <img class="index-img" src="images/ppl/metasurface.png"  width="100%" /> </a> 
-						</div>
-
-						<div class="index-img-box">
-							<a href="people.htm"> <img class="index-img left-align" src="images/ppl/group_2.jpg"  width="49%" /> </a>
-							<a href="people.htm"> <img class="index-img right-align" src="images/ppl/group.bmp"  width="49%" /> </a>
+						<div id="banner">    
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="images/slider/group.jpg" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>Our group</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/mod.png" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>mod</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/mwp.jpg" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>mwp</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/NP.jpg" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>NP</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/wafer.jpg" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>wafer</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/APR2307.jpg" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3>APR</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/slider/engine.png" style="width: 100%;height: 100%;object-fit: cover;"/>
+											<div class="detail">
+												<h3> MWP signal processing engine</h3>
+												<p><span>aaaa </span></p>
+											</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
 						</div>
 
 						<div class="custom-margin-float"></div>
@@ -280,14 +412,6 @@
 						</iframe>
 						Watch an introductory video of Cheng's Lab
 						</a>
-
-						<div id="cityu-media-slider-wrapper" class="theme-default">
-							<div id="cityu-media-slider" class="nivoSlider" style="height: 100% !important;">
-								<a href="#"><img src="images/research/LN.jpg" title="Research Image 1"/></a>
-								<a href="#"><img src="images/research/mod.png" title="Research Image 2"/></a>
-								<a href="#"><img src="images/research/wafer.jpg" title="Research Image 3"/></a>
-							</div>
-						</div>
 
 						
 		
@@ -398,6 +522,24 @@
 			</div>
 		</div>
 		<!-- /Footer -->
-		
+		<script>
+			trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
+			var swiper = new Swiper('.swiper-container',{
+				speed:500,
+				autoplay:4400,
+				autoplayDisableOnInteraction:false,
+				effect:'fade',
+				pagination : '.swiper-pagination',
+				paginationClickable :true,
+				// onSlideChangeStart: function(swiper){
+				// 	nextSlide=swiper.slides.eq(swiper.activeIndex);
+				// 	nextSlide.addClass(trList[Math.floor(Math.random()*5)]);
+				//    },
+				// onSlideChangeEnd: function(swiper){
+				// 	prevSlide=swiper.slides[swiper.previousIndex];
+				// 	prevSlide.className="swiper-slide";
+				//    },
+				});	
+		</script>
 	</body>
 </html>

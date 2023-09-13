@@ -52,19 +52,6 @@
 .top-logo-padding {
 	padding-top: 0px !important;
 }
-#cityu-media-slider-wrapper {
-	width:100%; 
-	max-height: 500px !important;
-	aspect-ratio:7/5;
-	max-width: 700px;
-}
-
-.theme-default #cityu-media-slider.nivoSlider {
-	width: 100% !important;
-	height: 100% !important;
-	background-size: 100% auto !important;
-}
-
 
 .top-logo-border {
 	padding-left: 0px;
