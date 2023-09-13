@@ -54,16 +54,16 @@
 }
 #cityu-media-slider-wrapper {
 	width:100%; 
-	max-height: none !important;
+	max-height: 500px !important;
 	aspect-ratio:7/5;
+	max-width: 700px;
 }
 
-.nivoSlider{
-	width:100% !important; 
+.theme-default #cityu-media-slider.nivoSlider {
+	width: 100% !important;
 	height: 100% !important;
-	background-size: contain !important;
-} */
-
+	background-size: 100% auto !important;
+}
 
 
 .top-logo-border {
