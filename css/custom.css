@@ -54,6 +54,7 @@
 }
 #cityu-media-slider-wrapper {
 	width:100%; 
+	max-height: none !important;
 	aspect-ratio:7/5;
 }
 
