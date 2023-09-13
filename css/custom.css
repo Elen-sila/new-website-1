@@ -23,11 +23,6 @@
 	background-color: gray;
 }
 
-.nivoSlider{
-	height: 500px !important;
-	width: 700px !important;
-}
-
 .ddsmoothmenu{
     font-size: 13px !important;
 }
@@ -58,9 +53,17 @@
 	padding-top: 0px !important;
 }
 #cityu-media-slider-wrapper {
-	width: 700px !important;
-	height: 500px !important;
+	width:100%; 
+	aspect-ratio:7/5;
 }
+
+.nivoSlider{
+	width:100% !important; 
+	height: 100% !important;
+	background-size: contain !important;
+} */
+
+
 
 .top-logo-border {
 	padding-left: 0px;
