@@ -272,31 +272,36 @@ div.google-visualization-tooltip > ul > li {
 	/* background-color: #A2A2A2; */
 }
 .people-box-image {
-    margin-left: 15px;
-	margin-right:20px;
+    margin-left: 2.5%;
+	/* margin-right:20px; */
 	padding-bottom: 5px;
-	width: 150px;
-    float: left;
+	width: 20%;
+    /* float: left; */
     border-bottom-color: #919191;
+	display: inline-block;
 }
 .people-box-content {
-    text-align: left;
-    width: 95%;
+    width: 71.5%;
     margin-left: 2.5%;
-	margin-right: 2.5%;
+	margin-right: 2%;
     margin-top: 2px;
     margin-bottom: 2px;
-    float: none;
-}.people-box-content-ad-bio {
+    display: inline-block;
+	vertical-align: top;
+}
+.people-box-content-basic {
+	text-align: left;
+}
+.people-box-content-ad-bio {
     text-align: justify;
-    margin-top: 10px;
+    /* margin-top: 10px;
     margin-bottom: 2px;
     float: none;
     margin-left: 2.5%;
 	margin-right: 2.5%;
     height: auto;
     font-size: 13px;
-    width: 95%;
+    width: 95%; */
 }
 
 .pub-category{
